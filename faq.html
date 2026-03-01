@@ -177,6 +177,12 @@
     .floating-phone { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: var(--green-light); color: white; width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center; font-size: 1.4rem; box-shadow: 0 4px 20px rgba(64,145,108,.5); animation: pulse 2s ease-in-out infinite; }
     @keyframes pulse { 0%, 100% { box-shadow: 0 4px 20px rgba(64,145,108,.5); } 50% { box-shadow: 0 4px 40px rgba(64,145,108,.8); } }
     @media (max-width: 900px) { .faq-layout { grid-template-columns: 1fr; } .faq-sidebar { position: static; } }
+        .nav__dropdown { position: relative; }
+    .nav__dropdown > a { display: flex; align-items: center; gap: 4px; cursor: pointer; }
+    .nav__dropdown-menu { display: none; position: absolute; top: calc(100% + 12px); left: 50%; transform: translateX(-50%); background: var(--white); border: 1px solid var(--gray-200); border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,.14); padding: 10px; min-width: 220px; z-index: 2000; }
+    .nav__dropdown:hover .nav__dropdown-menu { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .nav__dropdown-menu a { display: block; padding: 9px 14px; border-radius: 8px; font-size: .82rem; font-weight: 600; color: var(--gray-700); white-space: nowrap; transition: background var(--transition), color var(--transition); }
+    .nav__dropdown-menu a:hover { background: var(--gray-100); color: var(--green-light); }
     @media (max-width: 768px) { .footer__grid { grid-template-columns: 1fr; } .nav__links { display: none; } }
   </style>
 </head>
@@ -194,7 +200,7 @@
     <li><a href="services.html">Services</a></li>
     <li><a href="lawn-care-raleigh-nc.html">Lawn Care</a></li>
     <li><a href="hardscaping-raleigh-nc.html">Hardscaping</a></li>
-    <li><a href="about.html">About</a></li>
+    <li class="nav__dropdown"><a href="services.html#areas">Areas &#9662;</a><div class="nav__dropdown-menu"><a href="index.html">Raleigh</a><a href="cary-nc-landscaping.html">Cary</a><a href="apex-nc-landscaping.html">Apex</a><a href="garner-nc-landscaping.html">Garner</a><a href="knightdale-nc-landscaping.html">Knightdale</a><a href="morrisville-nc-landscaping.html">Morrisville</a><a href="wake-forest-nc-landscaping.html">Wake Forest</a><a href="holly-springs-nc-landscaping.html">Holly Springs</a><a href="fuquay-varina-nc-landscaping.html">Fuquay-Varina</a><a href="durham-nc-landscaping.html">Durham</a></div></li><li><a href="about.html">About</a></li>
     <li><a href="contact.html">Get Estimate</a></li>
   </ul>
   <a href="tel:+19193953067" class="btn btn--primary" style="padding:12px 24px;font-size:.875rem;">📞 Call Now</a>
