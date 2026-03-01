@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Dark brown outer ring (matches logo border) -->
+  <ellipse cx="32" cy="32" rx="31" ry="31" fill="#5C3317"/>
+  <!-- Gold inner ring -->
+  <ellipse cx="32" cy="32" rx="28" ry="28" fill="#D4A017"/>
+  <!-- Green landscape background -->
+  <ellipse cx="32" cy="32" rx="25" ry="25" fill="#1b4332"/>
+  <!-- Sky gradient area (top) -->
+  <ellipse cx="32" cy="20" rx="24" ry="16" fill="#87CEEB"/>
+  <!-- Sun burst -->
+  <circle cx="32" cy="18" r="5" fill="#F0C040"/>
+  <!-- Sun rays -->
+  <line x1="32" y1="10" x2="32" y2="6" stroke="#F0C040" stroke-width="2"/>
+  <line x1="40" y1="12" x2="43" y2="9" stroke="#F0C040" stroke-width="1.5"/>
+  <line x1="24" y1="12" x2="21" y2="9" stroke="#F0C040" stroke-width="1.5"/>
+  <!-- Green hills -->
+  <ellipse cx="20" cy="32" rx="12" ry="8" fill="#2d6a4f"/>
+  <ellipse cx="44" cy="32" rx="12" ry="8" fill="#2d6a4f"/>
+  <!-- Lawn stripes -->
+  <rect x="20" y="30" width="24" height="18" rx="2" fill="#40916c"/>
+  <!-- River/path through lawn -->
+  <path d="M30 48 Q31 38 32 30 Q33 38 34 48" fill="#74c69d" opacity="0.7"/>
+  <!-- GV text -->
+  <text x="32" y="50" font-family="Georgia,serif" font-size="13" font-weight="bold" 
+        fill="white" text-anchor="middle" 
+        style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8)">GV</text>
+</svg>
