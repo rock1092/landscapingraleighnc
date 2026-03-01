@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Maple Roastery | Raleigh Coffee Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #2f1f13;
+      --coffee: #6f4e37;
+      --latte: #f3e7db;
+      --leaf: #4c7c59;
+      --cream: #fffaf5;
+      --line: #e3d5c7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Work Sans", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 85% 8%, #f9ecdf 0, transparent 32%),
+        radial-gradient(circle at 12% 18%, #ecdfd1 0, transparent 27%),
+        var(--cream);
+    }
+    .hero { padding: 3rem 1rem 2rem; }
+    .wrap { max-width: 1040px; margin: 0 auto; }
+    h1 { margin: 0; font-family: "Cormorant Garamond", serif; font-size: clamp(2.3rem, 7vw, 4.3rem); line-height: 0.95; }
+    .lead { max-width: 58ch; line-height: 1.7; }
+    .btn { display: inline-block; text-decoration: none; color: #fff; background: var(--coffee); border-radius: 999px; padding: 0.7rem 1rem; font-weight: 700; }
+    .cards { padding: 1.4rem 1rem 3rem; }
+    .grid { max-width: 1040px; margin: 0 auto; display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 0.9rem; padding: 1rem; box-shadow: 0 10px 22px rgba(71, 43, 24, 0.09); }
+    .card h2 { margin-top: 0; font-family: "Cormorant Garamond", serif; font-size: 1.6rem; }
+    .note { color: var(--leaf); font-weight: 700; }
+    .back { margin: 1rem; display: inline-block; text-decoration: none; font-weight: 700; color: #14532d; }
+  </style>
+</head>
+<body>
+  <a class="back" href="./index.html">Back to showcase</a>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Small-Batch Coffee, Roasted in Raleigh</h1>
+      <p class="lead">Red Maple Roastery is a storytelling-focused page concept for cafes, beans subscriptions, and wholesale accounts across downtown Raleigh, Five Points, and North Hills.</p>
+      <a class="btn" href="#">Start Bean Subscription</a>
+    </div>
+  </header>
+
+  <section class="cards">
+    <div class="grid">
+      <article class="card"><h2>House Blend</h2><p>Chocolate, caramel, toasted almond.</p><p class="note">$17 / 12oz</p></article>
+      <article class="card"><h2>Single Origin Ethiopia</h2><p>Peach tea, jasmine, citrus brightness.</p><p class="note">$21 / 12oz</p></article>
+      <article class="card"><h2>Cold Brew Keg Program</h2><p>Office and restaurant delivery around the Triangle.</p><p class="note">Wholesale pricing</p></article>
+      <article class="card"><h2>Saturday Cupping</h2><p>Guided tasting and brewing workshop each weekend.</p><p class="note">Reserve 12 seats</p></article>
+    </div>
+  </section>
+</body>
+</html>

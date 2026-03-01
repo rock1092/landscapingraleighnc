@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capital Climate Pros | HVAC Raleigh Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #112031;
+      --hot: #e85d04;
+      --cool: #0096c7;
+      --bg: #f7fafc;
+      --line: #d9e2ec;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Public Sans", sans-serif; color: var(--ink); background: var(--bg); }
+    .hero {
+      background: linear-gradient(90deg, #ffefe2 0%, #f8fbff 50%, #e3f5ff 100%);
+      padding: 3rem 1rem 2rem;
+      border-bottom: 2px solid var(--line);
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; }
+    h1 { margin: 0; font-family: "Barlow Condensed", sans-serif; font-size: clamp(2rem, 6vw, 4.2rem); text-transform: uppercase; letter-spacing: 0.01em; }
+    .lead { max-width: 60ch; line-height: 1.6; }
+    .ctas { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+    .btn { text-decoration: none; font-weight: 700; border-radius: 0.5rem; padding: 0.7rem 0.95rem; }
+    .btn.hot { background: var(--hot); color: #fff; }
+    .btn.cool { background: var(--cool); color: #fff; }
+    .grid { padding: 1.5rem 1rem 3rem; max-width: 1080px; margin: 0 auto; display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 0.8rem; padding: 1rem; box-shadow: 0 8px 20px rgba(17, 32, 49, 0.06); }
+    .temp { font-weight: 800; }
+    .back { margin: 1rem; display: inline-block; text-decoration: none; font-weight: 700; color: #14532d; }
+  </style>
+</head>
+<body>
+  <a class="back" href="./index.html">Back to showcase</a>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Heating and Cooling for Raleigh Homes</h1>
+      <p class="lead">Capital Climate Pros is a practical, high-trust layout for HVAC companies that need urgent calls, service plans, and seasonal promotions to convert quickly.</p>
+      <div class="ctas">
+        <a class="btn hot" href="#">Emergency Repair</a>
+        <a class="btn cool" href="#">Book Tune-Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid">
+    <article class="card"><h2>AC Repair</h2><p>Fast diagnostics for no-cool and weak airflow issues.</p><p class="temp">Typical response: Same day</p></article>
+    <article class="card"><h2>Heat Pump Install</h2><p>High-efficiency systems sized for each floorplan.</p><p class="temp">Free install estimates</p></article>
+    <article class="card"><h2>Maintenance Plans</h2><p>Two seasonal visits + priority scheduling discounts.</p><p class="temp">From $19/month</p></article>
+    <article class="card"><h2>Indoor Air Quality</h2><p>Filtration and humidity balancing for healthier rooms.</p><p class="temp">Whole-home options</p></article>
+  </main>
+</body>
+</html>

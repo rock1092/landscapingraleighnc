@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oak City Paint Co. | Raleigh Painting Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1f2933;
+      --warm: #f26a2e;
+      --gold: #ffd166;
+      --bg: #fff8f1;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", sans-serif;
+      color: var(--ink);
+      background: linear-gradient(120deg, #fff1e3, #fffaf5 45%, #fef6ea);
+    }
+    .hero {
+      padding: 4rem 1rem 3rem;
+      background: repeating-linear-gradient(120deg, #f8e7d1, #f8e7d1 20px, #fff1df 20px, #fff1df 40px);
+      border-bottom: 4px solid var(--warm);
+    }
+    .container { max-width: 1080px; margin: 0 auto; }
+    h1 {
+      margin: 0;
+      font-family: "Bebas Neue", sans-serif;
+      letter-spacing: 0.04em;
+      font-size: clamp(2.3rem, 8vw, 5rem);
+      line-height: 0.95;
+    }
+    .tag { display: inline-block; margin-bottom: 0.6rem; background: var(--gold); padding: 0.2rem 0.6rem; font-weight: 700; border-radius: 999px; }
+    .lead { max-width: 62ch; font-size: 1.1rem; margin: 1rem 0 1.2rem; }
+    .cta { display: inline-flex; gap: 0.6rem; align-items: center; text-decoration: none; color: #fff; background: var(--warm); padding: 0.8rem 1rem; border-radius: 0.6rem; font-weight: 700; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+    .stat { background: #fff; padding: 0.8rem; border-radius: 0.6rem; border: 1px solid #f0d7bf; }
+    .stat strong { display: block; font-size: 1.3rem; }
+    section { padding: 2rem 1rem; }
+    .grid { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0.9rem; }
+    .card { background: var(--card); border-radius: 0.8rem; padding: 1rem; border: 1px solid #f1dcc8; box-shadow: 0 10px 30px rgba(138, 69, 25, 0.08); }
+    .card h2 { margin-top: 0; }
+    .before-after { background: #fff; border: 1px dashed #e8c8aa; border-radius: 0.8rem; padding: 1rem; max-width: 1080px; margin: 0 auto; }
+    .back { display: inline-block; margin: 1rem; color: #0f5132; font-weight: 700; text-decoration: none; }
+    @media (max-width: 700px) { .hero { padding-top: 3rem; } }
+  </style>
+</head>
+<body>
+  <a class="back" href="./index.html">Back to showcase</a>
+  <header class="hero">
+    <div class="container">
+      <span class="tag">Raleigh + Cary + Apex</span>
+      <h1>Interior, Exterior, and Commercial Painting</h1>
+      <p class="lead">Oak City Paint Co. helps homeowners and property managers refresh spaces with clean prep, sharp lines, and durable finishes built for North Carolina weather.</p>
+      <a class="cta" href="#quote">Get A Fast Quote</a>
+      <div class="stats">
+        <div class="stat"><strong>600+</strong>Homes painted</div>
+        <div class="stat"><strong>4.9/5</strong>Average review score</div>
+        <div class="stat"><strong>2-Year</strong>Labor warranty</div>
+        <div class="stat"><strong>48-Hour</strong>Quote turnaround</div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="grid">
+      <article class="card"><h2>Interior Painting</h2><p>Walls, trim, ceilings, cabinets, and stairwells with low-odor paint options.</p></article>
+      <article class="card"><h2>Exterior Painting</h2><p>Siding, brick, shutters, porches, and decks prepped and sealed for humid summers.</p></article>
+      <article class="card"><h2>Commercial Units</h2><p>Retail stores, office suites, and HOA common areas with off-hour scheduling.</p></article>
+      <article class="card"><h2>Drywall Repair</h2><p>Patch, sand, texture blend, and prime before color for smooth final results.</p></article>
+    </div>
+  </section>
+
+  <section id="quote">
+    <div class="before-after">
+      <h2>Example Booking Flow</h2>
+      <p>1) Submit room count and square footage. 2) Receive transparent estimate. 3) Pick color consult + start date.</p>
+      <p><strong>Call:</strong> (919) 555-0148 | <strong>Email:</strong> hello@oakcitypaint.example</p>
+    </div>
+  </section>
+</body>
+</html>

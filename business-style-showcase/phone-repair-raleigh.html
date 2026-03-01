@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RapidFix Mobile Lab | Raleigh Phone Repair Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0c1b33;
+      --blue: #0077b6;
+      --lime: #8ac926;
+      --bg: #f3f9ff;
+      --line: #cfe0f5;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "IBM Plex Sans", sans-serif; color: var(--ink); background: var(--bg); }
+    .hero {
+      padding: 3rem 1rem;
+      background: linear-gradient(130deg, #e5f4ff, #f4fbff 50%, #ecffe8);
+      border-bottom: 2px solid var(--line);
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; }
+    h1 { margin: 0; font-family: Rajdhani, sans-serif; font-size: clamp(2rem, 6vw, 4rem); letter-spacing: 0.02em; }
+    .lead { max-width: 64ch; font-size: 1.05rem; line-height: 1.6; }
+    .primary {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background: var(--blue);
+      border-radius: 0.55rem;
+      padding: 0.75rem 1rem;
+      font-weight: 700;
+    }
+    .badges { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+    .badge { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 0.45rem 0.75rem; font-weight: 600; }
+    .services { padding: 1.6rem 1rem 2.5rem; }
+    .grid { max-width: 1080px; margin: 0 auto; display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .item { background: var(--card); border: 1px solid var(--line); border-radius: 0.9rem; padding: 1rem; box-shadow: 0 8px 20px rgba(11, 28, 52, 0.08); }
+    .eta { color: #14532d; font-weight: 700; }
+    .booking { background: #fff; border: 1px dashed #a5c4ea; border-radius: 1rem; padding: 1rem; margin: 0 auto; max-width: 1080px; }
+    .back { margin: 1rem; display: inline-block; text-decoration: none; font-weight: 700; color: #14532d; }
+  </style>
+</head>
+<body>
+  <a class="back" href="./index.html">Back to showcase</a>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Fast Phone Repairs in Raleigh</h1>
+      <p class="lead">RapidFix Mobile Lab is a conversion-focused example for iPhone, Samsung, and tablet repair shops serving Raleigh, Garner, and Knightdale with same-day turnaround.</p>
+      <a class="primary" href="#book">Book Diagnostic</a>
+      <div class="badges">
+        <span class="badge">90-day repair warranty</span>
+        <span class="badge">Most screens in 45-60 min</span>
+        <span class="badge">Walk-ins welcome</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="services">
+    <div class="grid">
+      <article class="item"><h2>Screen Replacement</h2><p>Cracked glass, dead pixels, touch issues.</p><p class="eta">ETA: 45-60 min</p></article>
+      <article class="item"><h2>Battery Swap</h2><p>Rapid battery health recovery for older devices.</p><p class="eta">ETA: 30-45 min</p></article>
+      <article class="item"><h2>Charging Port Fix</h2><p>Debris cleanup or full port replacement when needed.</p><p class="eta">ETA: 35-50 min</p></article>
+      <article class="item"><h2>Water Damage Triage</h2><p>Board cleaning and recovery diagnostics.</p><p class="eta">ETA: Same day</p></article>
+    </div>
+  </section>
+
+  <section id="book" class="services">
+    <div class="booking">
+      <h2>Example Appointment Block</h2>
+      <p><strong>Today:</strong> 3:00 PM, 4:30 PM, 6:15 PM available</p>
+      <p><strong>Call:</strong> (919) 555-0171 | <strong>Text:</strong> (919) 555-0172</p>
+    </div>
+  </section>
+</body>
+</html>

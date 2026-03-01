@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Oak Family Dental | Raleigh Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #15364a;
+      --mint: #b8f2e6;
+      --sky: #dff4ff;
+      --blue: #1f7a8c;
+      --bg: #f8fdff;
+      --line: #d5e7ef;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "DM Sans", sans-serif; color: var(--ink); background: var(--bg); }
+    .hero { padding: 3rem 1rem 2rem; background: linear-gradient(120deg, var(--mint), var(--sky) 50%, #f9fffe); }
+    .wrap { max-width: 1040px; margin: 0 auto; }
+    h1 { margin: 0; font-family: Nunito, sans-serif; font-size: clamp(2rem, 6vw, 3.8rem); }
+    .lead { max-width: 60ch; line-height: 1.65; }
+    .cta { text-decoration: none; color: #fff; background: var(--blue); border-radius: 999px; padding: 0.7rem 1rem; font-weight: 700; display: inline-block; }
+    .services { padding: 1.6rem 1rem 3rem; }
+    .grid { max-width: 1040px; margin: 0 auto; display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 1rem; padding: 1rem; box-shadow: 0 10px 20px rgba(16, 49, 69, 0.07); }
+    .back { margin: 1rem; display: inline-block; text-decoration: none; font-weight: 700; color: #14532d; }
+  </style>
+</head>
+<body>
+  <a class="back" href="./index.html">Back to showcase</a>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Healthy Smiles for Raleigh Families</h1>
+      <p class="lead">Bright Oak Family Dental is an approachable landing page concept for pediatric and family dentistry with easy appointment flow and trust-focused service highlights.</p>
+      <a class="cta" href="#">Book New Patient Visit</a>
+    </div>
+  </header>
+
+  <section class="services">
+    <div class="grid">
+      <article class="card"><h2>Routine Cleanings</h2><p>Gentle exams, x-rays, and prevention plans.</p></article>
+      <article class="card"><h2>Kids Dentistry</h2><p>Calm visits for children and first-time patients.</p></article>
+      <article class="card"><h2>Whitening</h2><p>In-office and take-home brightening options.</p></article>
+      <article class="card"><h2>Emergency Dental</h2><p>Same-day support for pain, chips, or swelling.</p></article>
+    </div>
+  </section>
+</body>
+</html>

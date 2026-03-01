@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raleigh Goods Co. | Product Selling Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0b132b;
+      --teal: #00a896;
+      --orange: #ff7f11;
+      --bg: #f8fbff;
+      --card: #ffffff;
+      --line: #d6e4f0;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Space Grotesk", sans-serif; color: var(--ink); background: var(--bg); }
+    .hero {
+      padding: 3rem 1rem 2rem;
+      background:
+        radial-gradient(circle at 10% 10%, #ccf7f2 0, transparent 34%),
+        radial-gradient(circle at 90% 0%, #ffe8d1 0, transparent 30%),
+        #f8fbff;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; }
+    .kicker { display: inline-block; background: #d8fff6; color: #005f56; font-weight: 700; border-radius: 999px; padding: 0.35rem 0.7rem; }
+    h1 { margin: 0.7rem 0 0; font-family: "Archivo Black", sans-serif; font-size: clamp(1.9rem, 5vw, 3.6rem); line-height: 1; letter-spacing: 0.01em; }
+    .lead { max-width: 62ch; line-height: 1.6; }
+    .bar { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
+    .chip { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 0.5rem 0.75rem; font-weight: 600; }
+    .grid { padding: 1.5rem 1rem 3rem; }
+    .products { max-width: 1080px; margin: 0 auto; display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .product {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: transform 250ms ease;
+      animation: pop 500ms ease both;
+      box-shadow: 0 12px 24px rgba(19, 33, 68, 0.08);
+    }
+    .product:hover { transform: translateY(-5px); }
+    .visual { height: 150px; background: linear-gradient(130deg, #d4fffa, #ffe7d3 46%, #f2f7ff); }
+    .content { padding: 0.9rem; }
+    .content h2 { margin: 0; font-size: 1.05rem; }
+    .meta { margin: 0.4rem 0; color: #43506b; }
+    .price { font-weight: 800; color: #14532d; }
+    .buy {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      background: var(--orange);
+      color: #fff;
+      border-radius: 0.55rem;
+      padding: 0.5rem 0.75rem;
+      font-weight: 700;
+    }
+    .back { margin: 1rem; display: inline-block; text-decoration: none; font-weight: 700; color: #14532d; }
+    @keyframes pop { from { opacity: 0; transform: translateY(6px) scale(0.99); } to { opacity: 1; transform: translateY(0) scale(1); } }
+  </style>
+</head>
+<body>
+  <a class="back" href="./index.html">Back to showcase</a>
+  <header class="hero">
+    <div class="wrap">
+      <span class="kicker">Retail Demo for Raleigh</span>
+      <h1>Sell Products with a Bold Local Brand Feel</h1>
+      <p class="lead">Raleigh Goods Co. is an example storefront page style for local lifestyle brands, specialty stores, and pop-up markets selling online and in person.</p>
+      <div class="bar">
+        <span class="chip">Same-day local pickup</span>
+        <span class="chip">Triangle-wide shipping</span>
+        <span class="chip">Limited seasonal drops</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="grid">
+    <div class="products">
+      <article class="product"><div class="visual"></div><div class="content"><h2>Oak City Hoodie</h2><p class="meta">Mid-weight fleece, 4 colors</p><p class="price">$58</p><a class="buy" href="#">Add to Cart</a></div></article>
+      <article class="product"><div class="visual"></div><div class="content"><h2>Triangle Trail Bottle</h2><p class="meta">Insulated steel, 24oz</p><p class="price">$32</p><a class="buy" href="#">Add to Cart</a></div></article>
+      <article class="product"><div class="visual"></div><div class="content"><h2>Raleigh Print Pack</h2><p class="meta">3 city map art prints</p><p class="price">$45</p><a class="buy" href="#">Add to Cart</a></div></article>
+      <article class="product"><div class="visual"></div><div class="content"><h2>Weekend Tote</h2><p class="meta">Waxed canvas, reinforced seams</p><p class="price">$64</p><a class="buy" href="#">Add to Cart</a></div></article>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triangle Premier Realty | Raleigh Realtor Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #12263a;
+      --jade: #2a9d8f;
+      --sand: #f4efe8;
+      --cream: #fffdf9;
+      --line: #d9d2c8;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Manrope, sans-serif; color: var(--ink); background: var(--cream); }
+    .hero {
+      min-height: 64vh;
+      background:
+        linear-gradient(130deg, rgba(18, 38, 58, 0.78), rgba(42, 157, 143, 0.58)),
+        linear-gradient(60deg, #f2e8db, #efe4d5);
+      color: #fff;
+      padding: 2.4rem 1rem;
+      display: grid;
+      place-content: center;
+    }
+    .hero-inner { max-width: 980px; width: 100%; }
+    h1 { margin: 0; font-family: "Playfair Display", serif; font-size: clamp(2rem, 6vw, 4rem); }
+    .lead { max-width: 58ch; font-size: 1.08rem; line-height: 1.7; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+    .btn { text-decoration: none; border-radius: 999px; padding: 0.7rem 1rem; font-weight: 700; }
+    .btn.primary { background: #fff; color: #10324f; }
+    .btn.ghost { border: 1px solid #fff; color: #fff; }
+    .strip { background: var(--sand); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 1.2rem 1rem; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0.8rem; }
+    .metric { background: #fff; border: 1px solid var(--line); border-radius: 0.8rem; padding: 0.8rem; }
+    .metric strong { display: block; font-size: 1.2rem; }
+    .listings { padding: 2rem 1rem 3rem; }
+    .cards { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.9rem; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 0.9rem; overflow: hidden; box-shadow: 0 10px 30px rgba(18, 38, 58, 0.08); }
+    .image { height: 150px; background: linear-gradient(140deg, #d0e8f0, #f9dfbf 45%, #f6f4ef); }
+    .content { padding: 0.9rem; }
+    .price { font-weight: 800; font-size: 1.1rem; color: #14532d; }
+    .back { margin: 1rem; display: inline-block; text-decoration: none; font-weight: 700; color: #14532d; }
+  </style>
+</head>
+<body>
+  <a class="back" href="./index.html">Back to showcase</a>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Find Your Next Home in Raleigh and the Triangle</h1>
+      <p class="lead">Triangle Premier Realty combines local neighborhood expertise with clean marketing, cinematic listing visuals, and smart negotiation strategy for buyers, sellers, and investors.</p>
+      <div class="actions">
+        <a class="btn primary" href="#listings">Browse Featured Listings</a>
+        <a class="btn ghost" href="#consult">Book A 20-Min Consult</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="strip">
+    <div class="wrap metrics">
+      <div class="metric"><strong>132</strong>Homes sold last 12 months</div>
+      <div class="metric"><strong>11 days</strong>Median days on market</div>
+      <div class="metric"><strong>102%</strong>Avg. list-to-sale ratio</div>
+      <div class="metric"><strong>5.0 stars</strong>Client satisfaction score</div>
+    </div>
+  </section>
+
+  <section id="listings" class="listings">
+    <div class="cards">
+      <article class="card"><div class="image"></div><div class="content"><h2>North Hills Modern</h2><p>4 bed, 3.5 bath, walkable to dining and shopping.</p><p class="price">$925,000</p></div></article>
+      <article class="card"><div class="image"></div><div class="content"><h2>Cary Family Classic</h2><p>5 bed home in top school district, private backyard.</p><p class="price">$739,000</p></div></article>
+      <article class="card"><div class="image"></div><div class="content"><h2>Downtown Condo</h2><p>2 bed corner unit with skyline views and amenities.</p><p class="price">$465,000</p></div></article>
+    </div>
+  </section>
+
+  <section id="consult" class="strip">
+    <div class="wrap">
+      <h2>Ready to move?</h2>
+      <p>Call (919) 555-0193 or email team@trianglepremier.example for an example conversion-ready realtor page.</p>
+    </div>
+  </section>
+</body>
+</html>

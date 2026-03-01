@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raleigh Business Style Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --ink: #0d1b2a;
+      --card: #ffffff;
+      --line: #d9e2ec;
+      --primary: #136f63;
+      --accent: #f4a261;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Manrope", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 10%, #d9f3ee 0, transparent 34%),
+        radial-gradient(circle at 88% 0%, #ffe7cc 0, transparent 30%),
+        var(--bg);
+      min-height: 100vh;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1rem 3rem; }
+    h1 {
+      margin: 0;
+      font-family: "Syne", sans-serif;
+      font-size: clamp(1.9rem, 4.2vw, 3.3rem);
+      letter-spacing: -0.04em;
+    }
+    .sub { margin-top: 0.8rem; max-width: 65ch; font-size: 1.05rem; line-height: 1.6; }
+    .grid {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      display: block;
+      text-decoration: none;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      padding: 1rem;
+      color: inherit;
+      transition: transform 220ms ease, box-shadow 220ms ease;
+      box-shadow: 0 10px 30px rgba(13, 27, 42, 0.06);
+      animation: rise 500ms ease both;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 34px rgba(13, 27, 42, 0.12); }
+    .pill {
+      width: fit-content;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #0f5132;
+      background: #d1f5ea;
+      border-radius: 999px;
+      padding: 0.3rem 0.6rem;
+    }
+    h2 { margin: 0.7rem 0 0.35rem; font-size: 1.15rem; }
+    p { margin: 0; line-height: 1.5; }
+    .footer-note {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border-radius: 0.8rem;
+      border: 1px dashed var(--line);
+      background: #fff;
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Raleigh Area Business Style Showcase</h1>
+    <p class="sub">These are fully working sample landing pages with different visual directions, made as quick inspiration demos for businesses that do well across Raleigh, Cary, Durham, Apex, Garner, and Wake Forest.</p>
+
+    <section class="grid">
+      <a class="card" href="./paint-jobs-raleigh.html">
+        <div class="pill">Painting</div>
+        <h2>Paint Jobs</h2>
+        <p>Interior, exterior, and light commercial painting demo.</p>
+      </a>
+
+      <a class="card" href="./realtor-raleigh.html">
+        <div class="pill">Real Estate</div>
+        <h2>Realtor</h2>
+        <p>Elegant property showcase style for Triangle listings.</p>
+      </a>
+
+      <a class="card" href="./product-selling-raleigh.html">
+        <div class="pill">Retail</div>
+        <h2>Product Selling</h2>
+        <p>Catalog-focused page style for local shops and brands.</p>
+      </a>
+
+      <a class="card" href="./phone-repair-raleigh.html">
+        <div class="pill">Repair</div>
+        <h2>Phone Repair Shop</h2>
+        <p>Fast-service layout with booking CTA and trust badges.</p>
+      </a>
+
+      <a class="card" href="./hvac-raleigh.html">
+        <div class="pill">Home Services</div>
+        <h2>HVAC Service</h2>
+        <p>Local heating and cooling brand style with urgent calls.</p>
+      </a>
+
+      <a class="card" href="./dental-raleigh.html">
+        <div class="pill">Healthcare</div>
+        <h2>Family Dental</h2>
+        <p>Friendly, bright aesthetic for a neighborhood clinic.</p>
+      </a>
+
+      <a class="card" href="./coffee-roastery-raleigh.html">
+        <div class="pill">Food & Beverage</div>
+        <h2>Coffee Roastery</h2>
+        <p>Story-first brand page for local cafe and subscriptions.</p>
+      </a>
+    </section>
+
+    <p class="footer-note">Note: These are examples only. Content, pricing, phone numbers, and offers are placeholder samples for design and structure inspiration.</p>
+  </main>
+</body>
+</html>
